@@ -24,9 +24,9 @@ import { ReactComponent as Bed } from "../../assets/imgs/bed.svg";
 import { ReactComponent as Location } from "../../assets/imgs/location.svg";
 import VideoCall from "../../assets/imgs/VideoCall.jpeg";
 import Metting from "../../assets/imgs/Metting.png";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+// import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { useNavigate } from "react-router-dom";
-import "react-tabs/style/react-tabs.css";
+// import "react-tabs/style/react-tabs.css";
 import { useTranslation } from "react-i18next";
 
 function User() {
@@ -103,159 +103,159 @@ function User() {
             <AddIcon />
           </button>
           <div className="userProducts">
-            <Tabs>
-              <div className="userProducts-head">
-                <h3 className="userProducts-title">
-                  {" "}
-                  {t("availableProperties")}
-                </h3>
-                <TabList>
-                  <Tab>{t("buy")}</Tab>
-                  <Tab>{t("rent")}</Tab>
-                </TabList>
-              </div>
+            {/*<Tabs>*/}
+            {/*  <div className="userProducts-head">*/}
+            {/*    <h3 className="userProducts-title">*/}
+            {/*      {" "}*/}
+            {/*      {t("availableProperties")}*/}
+            {/*    </h3>*/}
+            {/*    <TabList>*/}
+            {/*      <Tab>{t("buy")}</Tab>*/}
+            {/*      <Tab>{t("rent")}</Tab>*/}
+            {/*    </TabList>*/}
+            {/*  </div>*/}
 
-              <TabPanel>
-                <div>
-                  <div className="userProductsBox">
-                    <div className="userProductsBox-Img">
-                      <img src={house1} className="img-fluid" alt="" />
-                    </div>
-                    <div className="userProductsBox-info">
-                      <div className="userProductsBox-infoHead">
-                        <h6 className="userProductsBox-price">2,130,000 $</h6>
-                        <div className="iconitems">
-                          <div className="iconlist">
-                            <Bath />
-                            <span>5</span>
-                          </div>
-                          <div className="iconlist">
-                            <Bed />
-                            <span>6</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="userProductsBox-infoTitle">
-                        {" "}
-                        Kearny Passaic
-                      </div>
-                      <div className="location">
-                        <Location /> New York, United state
-                      </div>
-                      <div className="userProductsBox-size">
-                        {" "}
-                        <span className="mr-15">124 meters</span>{" "}
-                        <span>apratment</span>
-                      </div>
-                      <button>{t("moreDetails")}</button>
-                    </div>
-                  </div>
-                  <div className="userProductsBox">
-                    <div className="userProductsBox-Img">
-                      <img src={house2} className="img-fluid" alt="" />
-                    </div>
-                    <div className="userProductsBox-info">
-                      <div className="userProductsBox-infoHead">
-                        <h6 className="userProductsBox-price">2,130,000 $</h6>
-                        <div className="iconitems">
-                          <div className="iconlist">
-                            <Bath />
-                            <span>5</span>
-                          </div>
-                          <div className="iconlist">
-                            <Bed />
-                            <span>6</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="userProductsBox-infoTitle">
-                        {" "}
-                        Kearny Passaic
-                      </div>
-                      <div className="location">
-                        <Location /> New York, United state
-                      </div>
-                      <div className="userProductsBox-size">
-                        {" "}
-                        <span className="mr-15">124 meters</span>{" "}
-                        <span>apratment</span>
-                      </div>
-                      <button>{t("moreDetails")}</button>
-                    </div>
-                  </div>
-                </div>
-              </TabPanel>
-              <TabPanel>
-                <div>
-                  <div className="userProductsBox">
-                    <div className="userProductsBox-Img">
-                      <img src={house3} className="img-fluid" alt="" />
-                    </div>
-                    <div className="userProductsBox-info">
-                      <div className="userProductsBox-infoHead">
-                        <h6 className="userProductsBox-price">2,130,000 $</h6>
-                        <div className="iconitems">
-                          <div className="iconlist">
-                            <Bath />
-                            <span>5</span>
-                          </div>
-                          <div className="iconlist">
-                            <Bed />
-                            <span>6</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="userProductsBox-infoTitle">
-                        {" "}
-                        Kearny Passaic{" "}
-                      </div>
-                      <div className="location">
-                        <Location /> New York, United state
-                      </div>
-                      <div className="userProductsBox-size">
-                        {" "}
-                        <span className="mr-15">124 meters</span>{" "}
-                        <span>apratment</span>
-                      </div>
-                      <button>{t("moreDetails")}</button>
-                    </div>
-                  </div>
-                  <div className="userProductsBox">
-                    <div className="userProductsBox-Img">
-                      <img src={house1} className="img-fluid" alt="" />
-                    </div>
-                    <div className="userProductsBox-info">
-                      <div className="userProductsBox-infoHead">
-                        <h6 className="userProductsBox-price">2,130,000 $</h6>
-                        <div className="iconitems">
-                          <div className="iconlist">
-                            <Bath />
-                            <span>5</span>
-                          </div>
-                          <div className="iconlist">
-                            <Bed />
-                            <span>6</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="userProductsBox-infoTitle">
-                        {" "}
-                        Kearny Passaic
-                      </div>
-                      <div className="location">
-                        <Location /> New York, United state
-                      </div>
-                      <div className="userProductsBox-size">
-                        {" "}
-                        <span className="mr-15">124 meters</span>{" "}
-                        <span>apratment</span>
-                      </div>
-                      <button>{t("moreDetails")}</button>
-                    </div>
-                  </div>
-                </div>
-              </TabPanel>
-            </Tabs>
+            {/*  <TabPanel>*/}
+            {/*    <div>*/}
+            {/*      <div className="userProductsBox">*/}
+            {/*        <div className="userProductsBox-Img">*/}
+            {/*          <img src={house1} className="img-fluid" alt="" />*/}
+            {/*        </div>*/}
+            {/*        <div className="userProductsBox-info">*/}
+            {/*          <div className="userProductsBox-infoHead">*/}
+            {/*            <h6 className="userProductsBox-price">2,130,000 $</h6>*/}
+            {/*            <div className="iconitems">*/}
+            {/*              <div className="iconlist">*/}
+            {/*                <Bath />*/}
+            {/*                <span>5</span>*/}
+            {/*              </div>*/}
+            {/*              <div className="iconlist">*/}
+            {/*                <Bed />*/}
+            {/*                <span>6</span>*/}
+            {/*              </div>*/}
+            {/*            </div>*/}
+            {/*          </div>*/}
+            {/*          <div className="userProductsBox-infoTitle">*/}
+            {/*            {" "}*/}
+            {/*            Kearny Passaic*/}
+            {/*          </div>*/}
+            {/*          <div className="location">*/}
+            {/*            <Location /> New York, United state*/}
+            {/*          </div>*/}
+            {/*          <div className="userProductsBox-size">*/}
+            {/*            {" "}*/}
+            {/*            <span className="mr-15">124 meters</span>{" "}*/}
+            {/*            <span>apratment</span>*/}
+            {/*          </div>*/}
+            {/*          <button>{t("moreDetails")}</button>*/}
+            {/*        </div>*/}
+            {/*      </div>*/}
+            {/*      <div className="userProductsBox">*/}
+            {/*        <div className="userProductsBox-Img">*/}
+            {/*          <img src={house2} className="img-fluid" alt="" />*/}
+            {/*        </div>*/}
+            {/*        <div className="userProductsBox-info">*/}
+            {/*          <div className="userProductsBox-infoHead">*/}
+            {/*            <h6 className="userProductsBox-price">2,130,000 $</h6>*/}
+            {/*            <div className="iconitems">*/}
+            {/*              <div className="iconlist">*/}
+            {/*                <Bath />*/}
+            {/*                <span>5</span>*/}
+            {/*              </div>*/}
+            {/*              <div className="iconlist">*/}
+            {/*                <Bed />*/}
+            {/*                <span>6</span>*/}
+            {/*              </div>*/}
+            {/*            </div>*/}
+            {/*          </div>*/}
+            {/*          <div className="userProductsBox-infoTitle">*/}
+            {/*            {" "}*/}
+            {/*            Kearny Passaic*/}
+            {/*          </div>*/}
+            {/*          <div className="location">*/}
+            {/*            <Location /> New York, United state*/}
+            {/*          </div>*/}
+            {/*          <div className="userProductsBox-size">*/}
+            {/*            {" "}*/}
+            {/*            <span className="mr-15">124 meters</span>{" "}*/}
+            {/*            <span>apratment</span>*/}
+            {/*          </div>*/}
+            {/*          <button>{t("moreDetails")}</button>*/}
+            {/*        </div>*/}
+            {/*      </div>*/}
+            {/*    </div>*/}
+            {/*  </TabPanel>*/}
+            {/*  <TabPanel>*/}
+            {/*    <div>*/}
+            {/*      <div className="userProductsBox">*/}
+            {/*        <div className="userProductsBox-Img">*/}
+            {/*          <img src={house3} className="img-fluid" alt="" />*/}
+            {/*        </div>*/}
+            {/*        <div className="userProductsBox-info">*/}
+            {/*          <div className="userProductsBox-infoHead">*/}
+            {/*            <h6 className="userProductsBox-price">2,130,000 $</h6>*/}
+            {/*            <div className="iconitems">*/}
+            {/*              <div className="iconlist">*/}
+            {/*                <Bath />*/}
+            {/*                <span>5</span>*/}
+            {/*              </div>*/}
+            {/*              <div className="iconlist">*/}
+            {/*                <Bed />*/}
+            {/*                <span>6</span>*/}
+            {/*              </div>*/}
+            {/*            </div>*/}
+            {/*          </div>*/}
+            {/*          <div className="userProductsBox-infoTitle">*/}
+            {/*            {" "}*/}
+            {/*            Kearny Passaic{" "}*/}
+            {/*          </div>*/}
+            {/*          <div className="location">*/}
+            {/*            <Location /> New York, United state*/}
+            {/*          </div>*/}
+            {/*          <div className="userProductsBox-size">*/}
+            {/*            {" "}*/}
+            {/*            <span className="mr-15">124 meters</span>{" "}*/}
+            {/*            <span>apratment</span>*/}
+            {/*          </div>*/}
+            {/*          <button>{t("moreDetails")}</button>*/}
+            {/*        </div>*/}
+            {/*      </div>*/}
+            {/*      <div className="userProductsBox">*/}
+            {/*        <div className="userProductsBox-Img">*/}
+            {/*          <img src={house1} className="img-fluid" alt="" />*/}
+            {/*        </div>*/}
+            {/*        <div className="userProductsBox-info">*/}
+            {/*          <div className="userProductsBox-infoHead">*/}
+            {/*            <h6 className="userProductsBox-price">2,130,000 $</h6>*/}
+            {/*            <div className="iconitems">*/}
+            {/*              <div className="iconlist">*/}
+            {/*                <Bath />*/}
+            {/*                <span>5</span>*/}
+            {/*              </div>*/}
+            {/*              <div className="iconlist">*/}
+            {/*                <Bed />*/}
+            {/*                <span>6</span>*/}
+            {/*              </div>*/}
+            {/*            </div>*/}
+            {/*          </div>*/}
+            {/*          <div className="userProductsBox-infoTitle">*/}
+            {/*            {" "}*/}
+            {/*            Kearny Passaic*/}
+            {/*          </div>*/}
+            {/*          <div className="location">*/}
+            {/*            <Location /> New York, United state*/}
+            {/*          </div>*/}
+            {/*          <div className="userProductsBox-size">*/}
+            {/*            {" "}*/}
+            {/*            <span className="mr-15">124 meters</span>{" "}*/}
+            {/*            <span>apratment</span>*/}
+            {/*          </div>*/}
+            {/*          <button>{t("moreDetails")}</button>*/}
+            {/*        </div>*/}
+            {/*      </div>*/}
+            {/*    </div>*/}
+            {/*  </TabPanel>*/}
+            {/*</Tabs>*/}
           </div>
 
           <div className="galleryBlock">

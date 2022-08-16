@@ -9,8 +9,8 @@ import { styled } from '@mui/material/styles';
 import Badge from '@mui/material/Badge';
 import Chip from '@mui/material/Chip';
 import { useSelector } from 'react-redux';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
+// import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+// import 'react-tabs/style/react-tabs.css';
 import { useTranslation } from "react-i18next";
 
 function UserList({ users }) {
@@ -70,94 +70,94 @@ function UserList({ users }) {
   return (
     <div className='sidebarMainList'>
       {/* <h3 className='sidebarTitle'>Agents in this area</h3> */}
-      <Tabs>
-        <TabList>
-          <Tab> {t("agent")}</Tab>
-          <Tab>{t("advocate")}</Tab>
-          <Tab>{t("fadyinancialAdvisor")} </Tab>
-        </TabList>
-        <TabPanel>
-          <div className='user-list'>
-            <Carousel responsive={responsive}>
-              {users.map((user) => {
-                return (
-                  <div onClick={() => history.push("/user")}>
-                    <StyledBadge
-                      overlap="circular"
-                      anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-                      variant="dot"
-                    >
-                      <img
-                        src={img}
-                        alt='myimg'
-                        className='imgg'
-                        key={user.id}
-                      // onClick={() => history.push(`/buy/user/${user.id}`)}
-                      />
-                    </StyledBadge>
-                    <span className='user-listName'>{t("mikiLto")}</span>
-                  </div>
+      {/*<Tabs>*/}
+      {/*  <TabList>*/}
+      {/*    <Tab> {t("agent")}</Tab>*/}
+      {/*    <Tab>{t("advocate")}</Tab>*/}
+      {/*    <Tab>{t("fadyinancialAdvisor")} </Tab>*/}
+      {/*  </TabList>*/}
+      {/*  <TabPanel>*/}
+      {/*    <div className='user-list'>*/}
+      {/*      <Carousel responsive={responsive}>*/}
+      {/*        {users.map((user) => {*/}
+      {/*          return (*/}
+      {/*            <div onClick={() => history.push("/user")}>*/}
+      {/*              <StyledBadge*/}
+      {/*                overlap="circular"*/}
+      {/*                anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}*/}
+      {/*                variant="dot"*/}
+      {/*              >*/}
+      {/*                <img*/}
+      {/*                  src={img}*/}
+      {/*                  alt='myimg'*/}
+      {/*                  className='imgg'*/}
+      {/*                  key={user.id}*/}
+      {/*                // onClick={() => history.push(`/buy/user/${user.id}`)}*/}
+      {/*                />*/}
+      {/*              </StyledBadge>*/}
+      {/*              <span className='user-listName'>{t("mikiLto")}</span>*/}
+      {/*            </div>*/}
 
-                );
-              })}
-            </Carousel>
-          </div>
-        </TabPanel>
-        <TabPanel>
-          <div className='user-list'>
-            <Carousel responsive={responsive}>
-              {users.map((user) => {
-                return (
-                  <div onClick={() => history.push("/user")}>
-                    <StyledBadge
-                      overlap="circular"
-                      anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-                      variant="dot"
-                    >
-                      <img
-                        src={user2}
-                        alt='myimg'
-                        className='imgg'
-                        key={user.id}
-                      // onClick={() => history.push(`/buy/user/${user.id}`)}
-                      />
-                    </StyledBadge>
-                    <span className='user-listName'>{t("mikiLto")}</span>
-                  </div>
+      {/*          );*/}
+      {/*        })}*/}
+      {/*      </Carousel>*/}
+      {/*    </div>*/}
+      {/*  </TabPanel>*/}
+      {/*  <TabPanel>*/}
+      {/*    <div className='user-list'>*/}
+      {/*      <Carousel responsive={responsive}>*/}
+      {/*        {users.map((user) => {*/}
+      {/*          return (*/}
+      {/*            <div onClick={() => history.push("/user")}>*/}
+      {/*              <StyledBadge*/}
+      {/*                overlap="circular"*/}
+      {/*                anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}*/}
+      {/*                variant="dot"*/}
+      {/*              >*/}
+      {/*                <img*/}
+      {/*                  src={user2}*/}
+      {/*                  alt='myimg'*/}
+      {/*                  className='imgg'*/}
+      {/*                  key={user.id}*/}
+      {/*                // onClick={() => history.push(`/buy/user/${user.id}`)}*/}
+      {/*                />*/}
+      {/*              </StyledBadge>*/}
+      {/*              <span className='user-listName'>{t("mikiLto")}</span>*/}
+      {/*            </div>*/}
 
-                );
-              })}
-            </Carousel>
-          </div>
-        </TabPanel>
-        <TabPanel>
-          <div className='user-list'>
-            <Carousel responsive={responsive}>
-              {users.map((user) => {
-                return (
-                  <div onClick={() => history.push("/user")}>
-                    <StyledBadge
-                      overlap="circular"
-                      anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-                      variant="dot"
-                    >
-                      <img
-                        src={img}
-                        alt='myimg'
-                        className='imgg'
-                        key={user.id}
-                      // onClick={() => history.push(`/buy/user/${user.id}`)}
-                      />
-                    </StyledBadge>
-                    <span className='user-listName'>{t("mikiLto")}</span>
-                  </div>
+      {/*          );*/}
+      {/*        })}*/}
+      {/*      </Carousel>*/}
+      {/*    </div>*/}
+      {/*  </TabPanel>*/}
+      {/*  <TabPanel>*/}
+      {/*    <div className='user-list'>*/}
+      {/*      <Carousel responsive={responsive}>*/}
+      {/*        {users.map((user) => {*/}
+      {/*          return (*/}
+      {/*            <div onClick={() => history.push("/user")}>*/}
+      {/*              <StyledBadge*/}
+      {/*                overlap="circular"*/}
+      {/*                anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}*/}
+      {/*                variant="dot"*/}
+      {/*              >*/}
+      {/*                <img*/}
+      {/*                  src={img}*/}
+      {/*                  alt='myimg'*/}
+      {/*                  className='imgg'*/}
+      {/*                  key={user.id}*/}
+      {/*                // onClick={() => history.push(`/buy/user/${user.id}`)}*/}
+      {/*                />*/}
+      {/*              </StyledBadge>*/}
+      {/*              <span className='user-listName'>{t("mikiLto")}</span>*/}
+      {/*            </div>*/}
 
-                );
-              })}
-            </Carousel>
-          </div>
-        </TabPanel>
-      </Tabs>
+      {/*          );*/}
+      {/*        })}*/}
+      {/*      </Carousel>*/}
+      {/*    </div>*/}
+      {/*  </TabPanel>*/}
+      {/*</Tabs>*/}
 
       <div>
         <div className='sidebarHeading'>
