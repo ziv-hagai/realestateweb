@@ -1,0 +1,61 @@
+var _g;
+
+var _excluded = ["svgRef", "title"];
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var SvgLocationMap = function SvgLocationMap(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, _excluded);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16.412,
+    height: 18.673,
+    viewBox: "0 0 16.412 18.673",
+    ref: svgRef
+  }, props), title ? /*#__PURE__*/React.createElement("title", null, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    id: "location",
+    transform: "translate(-31)"
+  }, /*#__PURE__*/React.createElement("g", {
+    id: "Group_156",
+    "data-name": "Group 156",
+    transform: "translate(33.188)"
+  }, /*#__PURE__*/React.createElement("g", {
+    id: "Group_155",
+    "data-name": "Group 155"
+  }, /*#__PURE__*/React.createElement("path", {
+    id: "Path_43",
+    "data-name": "Path 43",
+    d: "M97.018,0a6.015,6.015,0,0,0-4.892,9.519l4.431,6.914a.547.547,0,0,0,.921,0l4.45-6.938A6.018,6.018,0,0,0,97.018,0Zm0,8.753a2.735,2.735,0,1,1,2.735-2.735A2.739,2.739,0,0,1,97.018,8.753Z",
+    transform: "translate(-91)",
+    fill: "#008db2"
+  }))), /*#__PURE__*/React.createElement("g", {
+    id: "Group_158",
+    "data-name": "Group 158",
+    transform: "translate(31 12.571)"
+  }, /*#__PURE__*/React.createElement("g", {
+    id: "Group_157",
+    "data-name": "Group 157"
+  }, /*#__PURE__*/React.createElement("path", {
+    id: "Path_44",
+    "data-name": "Path 44",
+    d: "M43.483,344.7,40.728,349a1.809,1.809,0,0,1-3.045,0L34.924,344.7c-2.428.561-3.924,1.59-3.924,2.818,0,2.132,4.228,3.282,8.206,3.282s8.206-1.15,8.206-3.282C47.412,346.285,45.913,345.256,43.483,344.7Z",
+    transform: "translate(-31 -344.695)",
+    fill: "#008db2"
+  }))))));
+};
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  return /*#__PURE__*/React.createElement(SvgLocationMap, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/locationMap.c05fff49.svg";
+export { ForwardRef as ReactComponent };

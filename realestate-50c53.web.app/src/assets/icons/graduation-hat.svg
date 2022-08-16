@@ -1,0 +1,46 @@
+var _g;
+
+var _excluded = ["svgRef", "title"];
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var SvgGraduationHat = function SvgGraduationHat(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, _excluded);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 27.875,
+    height: 21.985,
+    viewBox: "0 0 27.875 21.985",
+    ref: svgRef
+  }, props), title ? /*#__PURE__*/React.createElement("title", null, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    id: "graduation-hat",
+    transform: "translate(0 -52.419)"
+  }, /*#__PURE__*/React.createElement("path", {
+    id: "Path_30",
+    "data-name": "Path 30",
+    d: "M3.825,67.807V60.031l10.113,4.334,13.937-5.973L13.937,52.419,0,58.392l2.139.917v8.5A2.532,2.532,0,0,0,.454,70.19V74.4H5.51V70.19a2.532,2.532,0,0,0-1.685-2.383Z",
+    fill: "#c2c3cc"
+  }), /*#__PURE__*/React.createElement("path", {
+    id: "Path_31",
+    "data-name": "Path 31",
+    d: "M113.079,239.84v4.392l7.584,3.792,7.584-3.792V239.84l-7.584,3.25Z",
+    transform: "translate(-106.726 -176.891)",
+    fill: "#c2c3cc"
+  }))));
+};
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  return /*#__PURE__*/React.createElement(SvgGraduationHat, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/graduation-hat.c616ddcf.svg";
+export { ForwardRef as ReactComponent };
