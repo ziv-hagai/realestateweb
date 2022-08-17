@@ -115,7 +115,8 @@ import React, { useState } from "react";
 //css
 import "../UserProfile/UserProfile.css";
 //svg
-import { ReactComponent as Arrow } from "../../assets/icons/arrow-right.svg";
+import Arrow from "../../assets/icons/arrow-right.svg";
+import SVG, { Props as SVGProps } from 'react-inlinesvg';
 //image
 import Logo from "../../assets/shop/logo.png";
 
@@ -240,7 +241,7 @@ function UserProfile() {
                             </div>
                           </div>
                           <span className="settingsListItem-img">
-                            <Arrow />
+                            <SVG src={Arrow} />
                           </span>
                         </li>
                       );

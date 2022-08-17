@@ -1,37 +1,12 @@
-var _path;
-
-var _excluded = ["svgRef", "title"];
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-import React from "react";
-
-var SvgCross = function SvgCross(_ref) {
-  var svgRef = _ref.svgRef,
-      title = _ref.title,
-      props = _objectWithoutProperties(_ref, _excluded);
-
-  return /*#__PURE__*/React.createElement("svg", _extends({
-    width: 41.637,
-    height: 41.637,
-    viewBox: "0 0 41.637 41.637",
-    ref: svgRef
-  }, props), title ? /*#__PURE__*/React.createElement("title", null, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
-    id: "Path",
-    d: "M26.988,17.174H17.174v9.814a2.453,2.453,0,1,1-4.907,0V17.174H2.453a2.453,2.453,0,1,1,0-4.907h9.814V2.453a2.453,2.453,0,1,1,4.907,0v9.814h9.814a2.453,2.453,0,1,1,0,4.907Z",
-    transform: "translate(20.818) rotate(45)",
-    fill: "#444652"
-  })));
-};
-
-var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
-  return /*#__PURE__*/React.createElement(SvgCross, _extends({
-    svgRef: ref
-  }, props));
-});
-export default __webpack_public_path__ + "static/media/cross.8eb04fa3.svg";
-export { ForwardRef as ReactComponent };
+<svg xmlns="http://www.w3.org/2000/svg" width="17.169" height="17.169" viewBox="0 0 17.169 17.169">
+  <g id="menu_1_" data-name="menu (1)" transform="translate(-0.001)">
+    <g id="Group_152" data-name="Group 152" transform="translate(0.001)">
+      <g id="Group_151" data-name="Group 151" transform="translate(0)">
+        <path id="Path_33" data-name="Path 33" d="M6.237,0H1.308A1.309,1.309,0,0,0,0,1.307V6.236A1.309,1.309,0,0,0,1.308,7.544H6.237A1.309,1.309,0,0,0,7.545,6.236V1.307A1.309,1.309,0,0,0,6.237,0Z" transform="translate(-0.001)" fill="#c2c3cc"/>
+        <path id="Path_34" data-name="Path 34" d="M172.742,0h-4.929a1.309,1.309,0,0,0-1.307,1.307V6.236a1.309,1.309,0,0,0,1.307,1.307h4.929a1.309,1.309,0,0,0,1.307-1.307V1.307A1.309,1.309,0,0,0,172.742,0Z" transform="translate(-156.881)" fill="#c2c3cc"/>
+        <path id="Path_35" data-name="Path 35" d="M6.237,166.507H1.308A1.309,1.309,0,0,0,0,167.814v4.929a1.309,1.309,0,0,0,1.307,1.307H6.237a1.309,1.309,0,0,0,1.307-1.307v-4.929A1.309,1.309,0,0,0,6.237,166.507Z" transform="translate(-0.001 -156.882)" fill="#c2c3cc"/>
+        <path id="Path_36" data-name="Path 36" d="M172.742,166.507h-4.929a1.309,1.309,0,0,0-1.307,1.307v4.929a1.309,1.309,0,0,0,1.307,1.307h4.929a1.309,1.309,0,0,0,1.307-1.307v-4.929A1.309,1.309,0,0,0,172.742,166.507Z" transform="translate(-156.881 -156.882)" fill="#c2c3cc"/>
+      </g>
+    </g>
+  </g>
+</svg>

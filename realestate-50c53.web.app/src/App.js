@@ -70,51 +70,51 @@ function App() {
           <div className={click ? "flex activeTabs" : "flex"}>
             <div className="left">
               <Routes>
-                <Route path="/login" component={Login} />
-                <Route path="/logins" component={LoginB} />
-                <Route path="/registers" component={RegisterB} />
-                <Route path="/startForFree" component={Register} />
-                <Route path="/menu" component={Menu} />
-                <Route component={UserDetails} path="/buy/user/:id" />
-                <Route component={ProductDetails} path="/buy/product/:id" />
-                <Route path="/" exact component={Buy} />
-                <Route path="/rent" component={Rent} />
-                <Route path="/shop" component={Shop} />
-                <Route path="/sell" component={Sell} />
-                <Route path="/settings" component={Settings} />
-                <Route path="/registerBusiness" component={RegisterBusiness} />
-                <Route path="/userProfile" component={UserProfile} />
-                <Route path="/user" component={User} />
-                <Route path="/dashboard" component={Dashboard} />
-                <Route path="/vandordetail" component={VendorsDetail} />
-                <Route path="/vendorDetails" component={VendorDetails} />
-                <Route path="/categoryDetails" component={CategoryDetails} />
-                <Route path="/product" component={Product} />
-                <Route path="/company" component={Company} />
-                <Route path="/categorylist" component={CategoryList} />
-                <Route path="/categoryproduct" component={CategoryProduct} />
-                <Route path="/agent" component={Agent} />
-                <Route path="/chat" component={Chat} />
-                <Route path="/bookingcartdetail" component={BookingCartDetail} />
-                <Route path="/bookingcart" component={BookingCart} />
-                <Route path="/successedit" component={EditAppoimentSuccess} />
-                <Route path="/successbooking" component={BookingAppoimentSuccess} />
-                <Route path="/bookingpayment" component={BookingPayment} />
-                <Route path="/bookingappointment" component={Appointment} />
-                <Route path="/editAppointment" component={EditAppointment} />
-                <Route path="/cart" component={Cart} />
-                <Route path="/chatboat" component={ChatBot} />
-                <Route path="/checkout" component={Checkout} />
-                <Route path="/wallet" component={Wallets} />
-                <Route path="/payment" component={Payment} />
-                <Route path="/loadmoney" component={LoadMoney} />
-                <Route path="/creaditcard" component={CreaditCard} />
-                <Route path="/shops" component={Shops} />
-                <Route path="/paymenthistory" component={PaymentHistory} />
-                <Route path="/paymentcardhistory" component={PaymentCardHistory} />
-                <Route path="/managedashboard" component={ManageDashboard} />
-                <Route path="/maps" component={Maps} />
-                <Route path="/allvandors" component={AllVendor} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/logins" element={<LoginB />} />
+                <Route path="/registers" element={<RegisterB />} />
+                <Route path="/startForFree" element={<Register />} />
+                <Route path="/menu" element={<Menu />} />
+                <Route element={<UserDetails />} path="/buy/user/:id" />
+                <Route element={<ProductDetails />} path="/buy/product/:id" />
+                <Route path="/" exact element={<Buy />} />
+                <Route path="/rent" element={<Rent />} />
+                <Route path="/shop" element={<Shop />} />
+                <Route path="/sell" element={<Sell />} />
+                <Route path="/settings" element={<Settings />} />
+                <Route path="/registerBusiness" element={<RegisterBusiness />} />
+                <Route path="/userProfile" element={<UserProfile />} />
+                <Route path="/user" element={<User />} />
+                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/vandordetail" element={<VendorsDetail />} />
+                <Route path="/vendorDetails" element={<VendorDetails />} />
+                <Route path="/categoryDetails" element={<CategoryDetails />} />
+                <Route path="/product" element={<Product />} />
+                <Route path="/company" element={<Company />} />
+                <Route path="/categorylist" element={<CategoryList />} />
+                <Route path="/categoryproduct" element={<CategoryProduct />} />
+                <Route path="/agent" element={<Agent />} />
+                <Route path="/chat" element={<Chat />} />
+                <Route path="/bookingcartdetail" element={<BookingCartDetail />} />
+                <Route path="/bookingcart" element={<BookingCart />} />
+                <Route path="/successedit" element={<EditAppoimentSuccess />} />
+                <Route path="/successbooking" element={<BookingAppoimentSuccess />} />
+                <Route path="/bookingpayment" element={<BookingPayment />} />
+                <Route path="/bookingappointment" element={<Appointment />} />
+                <Route path="/editAppointment" element={<EditAppointment />} />
+                <Route path="/cart" element={<Cart />} />
+                <Route path="/chatboat" element={<ChatBot />} />
+                <Route path="/checkout" element={<Checkout />} />
+                <Route path="/wallet" element={<Wallets />} />
+                <Route path="/payment" element={<Payment />} />
+                <Route path="/loadmoney" element={<LoadMoney />} />
+                <Route path="/creaditcard" element={<CreaditCard />} />
+                <Route path="/shops" element={<Shops />} />
+                <Route path="/paymenthistory" element={<PaymentHistory />} />
+                <Route path="/paymentcardhistory" element={<PaymentCardHistory />} />
+                <Route path="/managedashboard" element={<ManageDashboard />} />
+                <Route path="/maps" element={<Maps />} />
+                <Route path="/allvandors" element={<AllVendor />} />
               </Routes>
             </div>
             <div className="mobilePageTabs">

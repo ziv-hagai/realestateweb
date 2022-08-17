@@ -104,7 +104,7 @@ function Head() {
           {t("PropertyType")}
         </button>
         <button className="head-btn" onClick={() => toggleFilter("username")}>
-          <img src={seller} className="price-icon"  alt="" />
+          <img src={seller} className="price-icon" alt="" />
           {t("whoIsTheSeller")}
         </button>
         <button className="head-btn" onClick={() => toggleFilter("distance")}>
@@ -138,7 +138,7 @@ function Head() {
           <Dropdown
             name="username"
             handleChange={handleChange}
-            // options={["fadi", "adi"]}
+          // options={["fadi", "adi"]}
           />
         )}
         {showFilter.distance && (

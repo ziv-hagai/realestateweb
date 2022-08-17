@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import img1 from "../../assets/imgs/houses/1.jpg";
 import img2 from "../../assets/imgs/houses/2.jpg";
 import img3 from "../../assets/imgs/houses/3.jpg";
-import home from "../../assets/imgs/Home.png";
+import home from "../../assets/imgs/Home.jpg";
 // import { ReactComponent as Zoom } from '../../assets/imgs/video.svg';
 import { ReactComponent as Call } from '../../assets/imgs/phone-call.svg';
 // import { ReactComponent as Chat } from '../../assets/imgs/messenger.svg';
