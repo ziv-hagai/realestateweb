@@ -17,6 +17,7 @@ import { styled } from "@mui/material/styles";
 import { ReactComponent as LocationMap } from "../../assets/imgs/locationMap.svg";
 import { ReactComponent as Grid } from "../../assets/imgs/grid.svg";
 import { ReactComponent as List } from "../../assets/imgs/list.svg";
+import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 import { ReactComponent as Bath } from "../../assets/imgs/bath.svg";
 import { ReactComponent as Bed } from "../../assets/imgs/bed.svg";
 import { ReactComponent as Location } from "../../assets/imgs/location.svg";
@@ -118,7 +119,8 @@ function Map() {
             {t("grid")}
           </ToggleButton>
           <ToggleButton value="center" aria-label="centered">
-            <List />
+            {/* <List /> */}
+            <FormatListBulletedIcon className="listIcon" />
             {t("list")}
           </ToggleButton>
           <ToggleButton value="right" aria-label="right aligned">
