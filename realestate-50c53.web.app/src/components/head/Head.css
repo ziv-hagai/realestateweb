@@ -54,7 +54,7 @@ input {
   font-weight: 500;
   cursor: pointer;
 }
-.price-icon{
+.head-btn .price-icon{
   width: auto;
   margin: 0 6px 0 0;
   padding: 0;
