@@ -22,10 +22,14 @@ import { ReactComponent as Bed } from "../../assets/imgs/bed.svg";
 import { ReactComponent as Location } from "../../assets/imgs/location.svg";
 import { getMapData } from "../../store/actions/mapActions";
 
-import Shop from "../../assets/imgs/icons/Shop.png";
-import Rent from "../../assets/imgs/icons/Rent.png";
-import Buy from "../../assets/imgs/icons/Buy.png";
-import AR from "../../assets/imgs/icons/AR.png";
+// import Shop from "../../assets/imgs/icons/Shop.png";
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+// import Rent from "../../assets/imgs/icons/Rent.png";
+import VpnKeyIcon from '@mui/icons-material/VpnKey';
+// import Buy from "../../assets/imgs/icons/Buy.png";
+import HomeIcon from '@mui/icons-material/Home';
+// import AR from "../../assets/imgs/icons/AR.png";
+import ViewInArIcon from '@mui/icons-material/ViewInAr';
 
 import { useTranslation } from "react-i18next";
 
@@ -89,16 +93,20 @@ function Map() {
         >
           <ToggleButton value="left" aria-label="left aligned">
             {t("whatsNearby")} :
-            <img src={Shop} alt="" />
+            {/* <img src={Shop} alt="" /> */}
+            <ShoppingCartIcon />
           </ToggleButton>
           <ToggleButton value="center" aria-label="centered">
-            <img src={Buy} alt="" />
+            {/* <img src={Buy} alt="" /> */}
+            <HomeIcon />
           </ToggleButton>
           <ToggleButton value="right" aria-label="right aligned">
-            <img src={Rent} alt="" />
+            {/* <img src={Rent} alt="" /> */}
+            <VpnKeyIcon />
           </ToggleButton>
           <ToggleButton value="justify" aria-label="justified">
-            <img src={AR} alt="" />
+            {/* <img src={AR} alt="" /> */}
+            <ViewInArIcon />
           </ToggleButton>
         </ToggleButtonGroup>
         <ToggleButtonGroup
