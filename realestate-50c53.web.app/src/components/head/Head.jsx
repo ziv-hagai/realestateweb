@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from "react";
-import location from "../../images/location.png";
-import prices from "../../images/price-tag.png";
-import bed from "../../images/bed.png";
-import hotel from "../../images/building.png";
-import seller from "../../images/seller.png";
-import filter from "../../images/filter.png";
+// import location from "../../images/location.png";
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
+// import prices from "../../images/price-tag.png";
+import SellOutlinedIcon from '@mui/icons-material/SellOutlined';
+// import bed from "../../images/bed.png";
+import BedIcon from '@mui/icons-material/Bed';
+// import hotel from "../../images/building.png";
+import HomeWorkOutlinedIcon from '@mui/icons-material/HomeWorkOutlined';
+// import seller from "../../images/seller.png";
+import AccountBoxOutlinedIcon from '@mui/icons-material/AccountBoxOutlined';
+// import filter from "../../images/filter.png";
+import TuneIcon from '@mui/icons-material/Tune';
 import "../head/Head.css";
 import Filter from "../Filter/Filter";
 import { useDispatch } from "react-redux";
@@ -76,7 +82,8 @@ function Head() {
       </div> */}
       <div className="input-container">
         <div>
-          <img src={location} className="search-icon" alt="" />
+          <LocationOnOutlinedIcon className="search-icon" />
+          {/* <img src={location} className="search-icon" alt="" /> */}
           <input
             type="text"
             placeholder={t("searchForLocation")}
@@ -92,23 +99,28 @@ function Head() {
       </div>
       <div className={click ? "buttons active" : "buttons"}>
         <button className="head-btn" onClick={() => toggleFilter("price")}>
-          <img src={prices} className="price-icon" alt="" />
+          {/* <img src={prices} className="price-icon" alt="" /> */}
+          <SellOutlinedIcon className="price-icon" alt="" />
           <span className="price">{t("Price")}</span>
         </button>
         <button className="head-btn" onClick={() => toggleFilter("bedrooms")}>
-          <img src={bed} className="price-icon" alt="" />
+          {/* <img src={bed} className="price-icon" alt="" /> */}
+          <BedIcon className="price-icon" alt="" />
           {t("bedrooms")}
         </button>
         <button className="head-btn" onClick={() => toggleFilter("type")}>
-          <img src={hotel} className="price-icon" alt="" />
+          <HomeWorkOutlinedIcon className="price-icon" alt="" />
+          {/* <img src={hotel} className="price-icon" alt="" /> */}
           {t("PropertyType")}
         </button>
         <button className="head-btn" onClick={() => toggleFilter("username")}>
-          <img src={seller} className="price-icon" alt="" />
+          <AccountBoxOutlinedIcon className="price-icon" alt="" />
+          {/* <img src={seller} className="price-icon" alt="" /> */}
           {t("whoIsTheSeller")}
         </button>
         <button className="head-btn" onClick={() => toggleFilter("distance")}>
-          <img src={filter} className="price-icon" alt="" />
+          <TuneIcon className="price-icon" alt="" />
+          {/* <img src={filter} className="price-icon" alt="" /> */}
           {t("additionalFilters")}
         </button>
         {showFilter.price && (

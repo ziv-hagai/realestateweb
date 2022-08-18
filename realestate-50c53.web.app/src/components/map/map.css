@@ -44,6 +44,10 @@
     margin-right: 5px;
     width: 14px;
 }
+.mapFilterGroup button .listIcon {
+    height: 18px;
+    width: 18px;
+}
 .mapFilterGroup:first-child button svg {
     height: 15px;
     margin: 0 3px;
