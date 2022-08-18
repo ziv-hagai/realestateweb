@@ -9,8 +9,8 @@ import { styled } from '@mui/material/styles';
 import Badge from '@mui/material/Badge';
 import Chip from '@mui/material/Chip';
 import { useSelector } from 'react-redux';
-// import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-// import 'react-tabs/style/react-tabs.css';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 import { useTranslation } from "react-i18next";
 
 function UserList({ users }) {
@@ -70,7 +70,7 @@ function UserList({ users }) {
   return (
     <div className='sidebarMainList'>
       <h3 className='sidebarTitle'>Agents in this area</h3>
-      {/* <Tabs>
+      <Tabs>
         <TabList>
           <Tab> {t("agent")}</Tab>
           <Tab>{t("advocate")}</Tab>
@@ -153,11 +153,11 @@ function UserList({ users }) {
                   </div >
 
                 );
-})}
+              })}
             </Carousel >
           </div >
         </TabPanel >
-      </Tabs > */}
+      </Tabs >
 
       < div >
         <div className='sidebarHeading'>
