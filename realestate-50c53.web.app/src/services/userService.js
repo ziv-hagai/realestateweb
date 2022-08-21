@@ -1,5 +1,7 @@
-// import users from '../assets/data/users.json'
-let users = []
+
+import data from "../assets/data/data.json";
+let users = data[2].users
+// let users = []
 export const userService = {
     getUsers,
     getById
@@ -7,7 +9,7 @@ export const userService = {
 
 
 function getUsers() {
-    return users
+    return data[2].users
 }
 
 function getById(id) {

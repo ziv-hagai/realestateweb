@@ -1,5 +1,5 @@
-// import allProducts from "../assets/data/products.json";
-let allProducts = []
+import data from "../assets/data/data.json";
+let allProducts = data[1].products
 export const productService = {
   getProducts,
   getById,
