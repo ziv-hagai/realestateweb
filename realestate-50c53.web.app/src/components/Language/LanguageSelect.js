@@ -4,7 +4,7 @@ import En from "../../assets/En.png";
 import Fr from "../../assets/Fr.png";
 import Ru from "../../assets/Ru.jpg";
 import He from "../../assets/He.png";
-import Ar from "../../assets/Ar.jpg";
+import Ar from "../../assets/Ar.png";
 import ArrowDropDown from "@material-ui/icons/ArrowDropDown";
 import Button from "@material-ui/core/Button";
 import Popover from "@material-ui/core/Popover";
@@ -23,7 +23,7 @@ const LanguageSelect = () => {
   };
   const selected = localStorage.getItem("i18nextLng") || "en";
 
-  useEffect(() => {}, []);
+  useEffect(() => { }, []);
   const [menuAnchor, setMenuAnchor] = useState(null);
   const { t } = useTranslation();
 
