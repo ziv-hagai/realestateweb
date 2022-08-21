@@ -2,6 +2,7 @@ import React from 'react';
 import ProductPreview from '../ProductPreview/ProductPreview';
 import '../ProductList/ProductList.css';
 function ProductList({ products }) {
+
   return (
     <div className='product-list'>
       {products &&

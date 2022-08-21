@@ -145,7 +145,7 @@ function User() {
             {/*          <div className="userProductsBox-size">*/}
             {/*            {" "}*/}
             {/*            <span className="mr-15">124 meters</span>{" "}*/}
-            {/*            <span>apratment</span>*/}
+            {/*            <span>apartment</span>*/}
             {/*          </div>*/}
             {/*          <button>{t("moreDetails")}</button>*/}
             {/*        </div>*/}
@@ -178,7 +178,7 @@ function User() {
             {/*          <div className="userProductsBox-size">*/}
             {/*            {" "}*/}
             {/*            <span className="mr-15">124 meters</span>{" "}*/}
-            {/*            <span>apratment</span>*/}
+            {/*            <span>apartment</span>*/}
             {/*          </div>*/}
             {/*          <button>{t("moreDetails")}</button>*/}
             {/*        </div>*/}
@@ -215,7 +215,7 @@ function User() {
             {/*          <div className="userProductsBox-size">*/}
             {/*            {" "}*/}
             {/*            <span className="mr-15">124 meters</span>{" "}*/}
-            {/*            <span>apratment</span>*/}
+            {/*            <span>apartment</span>*/}
             {/*          </div>*/}
             {/*          <button>{t("moreDetails")}</button>*/}
             {/*        </div>*/}
@@ -248,7 +248,7 @@ function User() {
             {/*          <div className="userProductsBox-size">*/}
             {/*            {" "}*/}
             {/*            <span className="mr-15">124 meters</span>{" "}*/}
-            {/*            <span>apratment</span>*/}
+            {/*            <span>apartment</span>*/}
             {/*          </div>*/}
             {/*          <button>{t("moreDetails")}</button>*/}
             {/*        </div>*/}

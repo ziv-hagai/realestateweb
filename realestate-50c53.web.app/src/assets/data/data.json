@@ -7,7 +7,6 @@
 		"type": "LOAD_PRODUCTS",
 		"products": [
 			{
-				"tag": "private",
 				"Image": "1.jpg",
 				"id": 0,
 				"name": "dgrd",
@@ -17,14 +16,13 @@
 				"distance": "2322",
 				"bedrooms": 3,
 				"bathroom": 2,
-				"type": "apratment",
+				"type": "apartment",
 				"position": {
 					"lng": 35.209185,
 					"lat": 31.7040256
 				}
 			},
 			{
-				"tag": "commercial",
 				"Image": "2.jpg",
 				"id": 1,
 				"name": "grdgrdgr",
@@ -34,14 +32,13 @@
 				"distance": "453",
 				"bedrooms": 6,
 				"bathroom": 2,
-				"type": "apratment",
+				"type": "apartment",
 				"position": {
 					"lng": 34.9909185,
 					"lat": 31.5040256
 				}
 			},
 			{
-				"tag": "industrial",
 				"Image": "3.jpg",
 				"id": 2,
 				"name": "dgrd",
@@ -51,14 +48,13 @@
 				"distance": "123",
 				"bedrooms": 5,
 				"bathroom": 6,
-				"type": "apratment",
+				"type": "apartment",
 				"position": {
 					"lng": 34.9909185,
 					"lat": 32.4040256
 				}
 			},
 			{
-				"tag": "parking",
 				"Image": "4.jpg",
 				"id": 3,
 				"name": "grdgrd",
@@ -68,14 +64,13 @@
 				"distance": "2342",
 				"bedrooms": 3,
 				"bathroom": 2,
-				"type": "apratment",
+				"type": "hotel",
 				"position": {
 					"lng": 34.9909185,
 					"lat": 31.9040256
 				}
 			},
 			{
-				"tag": "land",
 				"Image": "5.jpg",
 				"id": 4,
 				"name": "ssss",
@@ -85,14 +80,13 @@
 				"distance": "7656",
 				"bedrooms": 1,
 				"bathroom": 0,
-				"type": "apratment",
+				"type": "apartment",
 				"position": {
 					"lng": 34.9909185,
 					"lat": 32.7040256
 				}
 			},
 			{
-				"tag": "duplex",
 				"Image": "6.jpg",
 				"id": 5,
 				"name": "grgrdggd",
@@ -102,14 +96,13 @@
 				"distance": "231",
 				"bedrooms": 2,
 				"bathroom": 3,
-				"type": "apratment",
+				"type": "hotel",
 				"position": {
 					"lng": 34.9909185,
 					"lat": 31.4040256
 				}
 			},
 			{
-				"tag": "private",
 				"Image": "7.jpg",
 				"id": 6,
 				"name": "fdgdrd",
@@ -119,14 +112,13 @@
 				"distance": "1231",
 				"bedrooms": 6,
 				"bathroom": 9,
-				"type": "apratment",
+				"type": "apartment",
 				"position": {
 					"lng": 34.5909185,
 					"lat": 31.7040256
 				}
 			},
 			{
-				"tag": "private",
 				"Image": "8.jpeg",
 				"id": 7,
 				"name": "hthtfhtgsfe",
@@ -136,14 +128,13 @@
 				"distance": "231",
 				"bedrooms": 1,
 				"bathroom": 4,
-				"type": "apratment",
+				"type": "apartment",
 				"position": {
 					"lng": 34.8909185,
 					"lat": 31.7040256
 				}
 			},
 			{
-				"tag": "private",
 				"Image": "9.jpg",
 				"id": 8,
 				"name": "yousof",
@@ -153,7 +144,7 @@
 				"distance": "2",
 				"bedrooms": 2,
 				"bathroom": 1,
-				"type": "apratment",
+				"type": "land",
 				"position": {
 					"lng": 34.6409185,
 					"lat": 31.4240256
