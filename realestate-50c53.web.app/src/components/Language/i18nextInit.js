@@ -5,7 +5,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import translationEN from "../../components/Language/locales/en/translation.json";
 import translationFR from "../../components/Language/locales/fr/translation.json";
 // import translationRU from "../../components/Language/locales/ru/translation.json";
-// import translationHE from "../../components/Language/locales/he/translation.json";
+import translationHE from "../../components/Language/locales/he/translation.json";
 // import translationAR from "../../components/Language/locales/ar/translation.json";
 
 const fallbackLng = ["en"];
@@ -21,9 +21,9 @@ const resources = {
   // ru: {
   //   translation: translationRU
   // },
-  // he: {
-  //   translation: translationHE
-  // },
+  he: {
+    translation: translationHE
+  },
   // ar: {
   //   translation: translationAR
   // },
