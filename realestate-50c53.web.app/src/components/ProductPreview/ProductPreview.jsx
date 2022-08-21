@@ -62,11 +62,11 @@ function ProductPreview({ product }) {
           <div className='productTitle'>{t("kearnyPassaic")}</div>
           <div className='location'>
             <Location />
-            <span>{product.location}</span>
+            <span>{t(product.location)}</span>
           </div>
           <div className='footer flex'>
             <div className='distance'>{product.distance} {t("meters")} </div>
-            <div className='type'>{product.type}</div>
+            <div className='type'>{t(product.type)}</div>
           </div>
         </div>
       </div>

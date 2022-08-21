@@ -10,7 +10,7 @@ import Button from '@mui/material/Button';
 import { useTranslation } from "react-i18next";
 
 export default function Register() {
-  
+
   const [isRemember, setRemember] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -69,13 +69,13 @@ export default function Register() {
 
             <div className='formRow'>
               <TextField
-            id="outlined-basic"
-            variant="outlined"
-            label="+62"
-            value={email}
-            className="inputStyle inputStyle--small"
-            onChangeText={text => setEmail(text)}
-          />
+                id="outlined-basic"
+                variant="outlined"
+                label="+62"
+                value={email}
+                className="inputStyle inputStyle--small"
+                onChangeText={text => setEmail(text)}
+              />
               <TextField
                 id="outlined-basic"
                 variant="outlined"
@@ -93,7 +93,7 @@ export default function Register() {
                 onChange={handleCountryChange}
               >
                 {countryList.map(item => {
-                  return <MenuItem value={item.label}>{item.label}</MenuItem>
+                  return <MenuItem value={item.label}>{t(item.label)}</MenuItem>
                 })}
               </Select>
             </div>
@@ -129,7 +129,7 @@ export default function Register() {
             </div>
 
             <div>
-              <h2>{t("tellUsAboutYourself")} </h2> 
+              <h2>{t("tellUsAboutYourself")} </h2>
               <TextareaAutosize
                 aria-label="empty textarea"
                 placeholder={t("helloMyName")}
@@ -142,7 +142,7 @@ export default function Register() {
             <div className='CheckLinkBlock'>
               <FormControlLabel control={<Checkbox defaultChecked />} label="" />
               <p>{t("iAgreeToSquares")} <a href='/'>{t("cookies")}</a> {t("and")} <a href='/'>{t("privacyPolicy")}</a></p>
-              </div>
+            </div>
 
             <div classname="btns">
               <Button onClick={() => console.log("call")} className="loginBtn">{t("login")}</Button>

@@ -150,7 +150,7 @@ export default function RegisterB() {
                 error={errors.select ? true : false}
               >
                 {countryList.map((item) => {
-                  return <MenuItem value={item.label}>{item.label}</MenuItem>;
+                  return <MenuItem value={item.label}>{t(item.label)}</MenuItem>;
                 })}
               </Select>
             </div>

@@ -241,6 +241,7 @@ iframe {
   display: flex;
   overflow: hidden;
   position: relative;
+  direction: ltr;
 }
 
 .img-fluid {
@@ -758,7 +759,7 @@ body[dir="rtl"] .sendBlockOptions button {
 
   .flex.activeTabs .right {
     left: 50% !important;
-    /* width: 50%; */
+    width: 50vw;
   }
 
 

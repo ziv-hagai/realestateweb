@@ -69,7 +69,7 @@ function UserList({ users }) {
 
   return (
     <div className='sidebarMainList'>
-      <h3 className='sidebarTitle'>Agents in this area</h3>
+      <h3 className='sidebarTitle'>{t("agentsInThisArea")}</h3>
       <Tabs>
         <TabList>
           <Tab> {t("agent")}</Tab>
@@ -162,7 +162,7 @@ function UserList({ users }) {
       < div >
         <div className='sidebarHeading'>
           <h2 className='sidebarTitle'>{t("apartmentsInArea")}</h2>
-          <h2 className='sidebarText'>96 apartments to buy</h2>
+          <h2 className='sidebarText'>96 {t("apartmentsToBuy")}</h2>
           <Chip label={t("sortingPopularty")} />
         </div>
 

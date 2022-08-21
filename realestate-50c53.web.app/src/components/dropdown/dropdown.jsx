@@ -30,7 +30,7 @@ export default function Dropdown() {
                 // srcSet={img}
                 alt=""
               />
-              {option.label}
+              {t(option.label)}
             </Box>
           )}
           renderInput={(params) => (
@@ -49,8 +49,6 @@ export default function Dropdown() {
   );
 }
 const user = [
-  {label: "fadi"},
-  {label: "Adi"},
-  {label: "fadi" },
-  {label: "Adi"},
+  { label: "yosi" },
+  { label: "adi" }
 ];

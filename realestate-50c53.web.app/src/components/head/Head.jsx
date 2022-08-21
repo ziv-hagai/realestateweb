@@ -105,7 +105,7 @@ function Head() {
         <button className="head-btn" onClick={() => toggleFilter("price")}>
           {/* <img src={prices} className="price-icon" alt="" /> */}
           <SellOutlinedIcon className="price-icon" alt="" />
-          <span className="price">{t("Price")}</span>
+          <span className="price">{t("price")}</span>
         </button>
         <button className="head-btn" onClick={() => toggleFilter("bedrooms")}>
           {/* <img src={bed} className="price-icon" alt="" /> */}
