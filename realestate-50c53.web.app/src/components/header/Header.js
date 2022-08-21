@@ -132,7 +132,7 @@ const Header = () => {
               <div className="headerLeft">
                 <div className="headerMainLogo">
                   {/* <p>{t("hello_welcome_to_react")}</p> */}
-                  <a className="mainheader__btnLogo">RealEState</a>
+                  <a className="mainheader__btnLogo">{t("realEstate")}</a>
                 </div>
                 {/* {isMenuOpen ? (
                   <Drawer
