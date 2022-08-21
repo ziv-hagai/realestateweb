@@ -71,6 +71,10 @@ function Head() {
         minDistance: value[0],
         maxDistance: value[1],
       });
+    } else if (name === "type") {
+      value === "all"
+        ? setFilterBy({ ...filterBy, type: "" })
+        : setFilterBy({ ...filterBy, type: value });
     } else {
       setFilterBy({ ...filterBy, [name]: value });
     }
@@ -142,7 +146,7 @@ function Head() {
           <TypeDropdown
             name="type"
             handleChange={handleChange}
-            options={["apartment", "hotel"]}
+            options={["all", "apartment", "hotel"]}
           />
         )}
         {showFilter.username && (
