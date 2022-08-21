@@ -1,13 +1,23 @@
-.product-list{
+.flex .product-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 15px;
   margin: 0 0 28px;
+  transition: all 0.5s ease !important;
 }
-@media screen and (max-width: 600px) { 
-  .product-list{
+
+.activeTabs .product-list {
+  grid-template-columns: 1fr 1fr;
+  transition: all 0.5s ease !important;
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .product-list {
     display: block;
   }
+
   .product-preview {
     margin-bottom: 10px;
   }

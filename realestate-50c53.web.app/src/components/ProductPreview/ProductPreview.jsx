@@ -36,7 +36,8 @@ function ProductPreview({ product }) {
         }}
       >
         <div className='product-preview-status'>
-          <Chip label={t("projectTag")} />
+          {/* <Chip label={t("projectTag")} /> */}
+          <Chip label={product.tag} />
           <Input id="icon-button-file" type="button" />
           <IconButton color="primary" aria-label="upload picture" component="span" className='likeBtn'>
             <FavoriteBorderOutlinedIcon />

@@ -7,6 +7,7 @@
 		"type": "LOAD_PRODUCTS",
 		"products": [
 			{
+				"tag": "private",
 				"Image": "1.jpg",
 				"id": 0,
 				"name": "dgrd",
@@ -23,6 +24,7 @@
 				}
 			},
 			{
+				"tag": "commercial",
 				"Image": "2.jpg",
 				"id": 1,
 				"name": "grdgrdgr",
@@ -39,6 +41,7 @@
 				}
 			},
 			{
+				"tag": "industrial",
 				"Image": "3.jpg",
 				"id": 2,
 				"name": "dgrd",
@@ -55,6 +58,7 @@
 				}
 			},
 			{
+				"tag": "parking",
 				"Image": "4.jpg",
 				"id": 3,
 				"name": "grdgrd",
@@ -71,6 +75,7 @@
 				}
 			},
 			{
+				"tag": "land",
 				"Image": "5.jpg",
 				"id": 4,
 				"name": "ssss",
@@ -87,6 +92,7 @@
 				}
 			},
 			{
+				"tag": "duplex",
 				"Image": "6.jpg",
 				"id": 5,
 				"name": "grgrdggd",
@@ -103,6 +109,7 @@
 				}
 			},
 			{
+				"tag": "private",
 				"Image": "7.jpg",
 				"id": 6,
 				"name": "fdgdrd",
@@ -119,6 +126,7 @@
 				}
 			},
 			{
+				"tag": "private",
 				"Image": "8.jpeg",
 				"id": 7,
 				"name": "hthtfhtgsfe",
@@ -135,6 +143,7 @@
 				}
 			},
 			{
+				"tag": "private",
 				"Image": "9.jpg",
 				"id": 8,
 				"name": "yousof",
@@ -221,6 +230,94 @@
 			},
 			{
 				"id": 9,
+				"name": "yosi",
+				"desc": "my name is yosi and ....",
+				"img": "",
+				"rate": 5,
+				"ratingCount": 543
+			},
+			{
+				"id": 10,
+				"name": "yosi",
+				"desc": "my name is yosi and ....",
+				"img": "",
+				"rate": 5,
+				"ratingCount": 543
+			},
+			{
+				"id": 11,
+				"name": "yosi",
+				"desc": "my name is yosi and ....",
+				"img": "",
+				"rate": 5,
+				"ratingCount": 543
+			},
+			{
+				"id": 12,
+				"name": "yosi",
+				"desc": "my name is yosi and ....",
+				"img": "",
+				"rate": 5,
+				"ratingCount": 543
+			},
+			{
+				"id": 13,
+				"name": "yosi",
+				"desc": "my name is yosi and ....",
+				"img": "",
+				"rate": 5,
+				"ratingCount": 543
+			},
+			{
+				"id": 14,
+				"name": "yosi",
+				"desc": "my name is yosi and ....",
+				"img": "",
+				"rate": 5,
+				"ratingCount": 543
+			},
+			{
+				"id": 15,
+				"name": "yosi",
+				"desc": "my name is yosi and ....",
+				"img": "",
+				"rate": 5,
+				"ratingCount": 543
+			},
+			{
+				"id": 16,
+				"name": "yosi",
+				"desc": "my name is yosi and ....",
+				"img": "",
+				"rate": 5,
+				"ratingCount": 543
+			},
+			{
+				"id": 17,
+				"name": "yosi",
+				"desc": "my name is yosi and ....",
+				"img": "",
+				"rate": 5,
+				"ratingCount": 543
+			},
+			{
+				"id": 18,
+				"name": "yosi",
+				"desc": "my name is yosi and ....",
+				"img": "",
+				"rate": 5,
+				"ratingCount": 543
+			},
+			{
+				"id": 19,
+				"name": "yosi",
+				"desc": "my name is yosi and ....",
+				"img": "",
+				"rate": 5,
+				"ratingCount": 543
+			},
+			{
+				"id": 20,
 				"name": "yosi",
 				"desc": "my name is yosi and ....",
 				"img": "",
