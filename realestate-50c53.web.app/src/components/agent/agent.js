@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import SellIcon from "@mui/icons-material/Sell";
 import ChatOutlinedIcon from "@mui/icons-material/ChatOutlined";
 import ArrowCircleRightRoundedIcon from "@mui/icons-material/ArrowCircleRightRounded";
-import img from "../../assets/imgs/user.jpeg";
+import img from "../../assets/imgs/users/user1.jpg";
 import { styled } from "@mui/material/styles";
 import Badge from "@mui/material/Badge";
 import KeyboardVoiceIcon from "@mui/icons-material/KeyboardVoice";

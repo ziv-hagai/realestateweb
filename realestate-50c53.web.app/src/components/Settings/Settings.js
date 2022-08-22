@@ -5,7 +5,7 @@ import "../UserProfile//UserProfile.css";
 import { ReactComponent as Arrow } from "../../assets/icons/arrow-right.svg";
 //image
 import "../Settings/Settings.css";
-import userImg from "../../assets/imgs/user.jpeg";
+import userImg from "../../assets/imgs/users/user1.jpg";
 
 //components
 import Dashboard from "../pages/shop/dashboard/Dashboard";

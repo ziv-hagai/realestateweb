@@ -1,9 +1,7 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import img from '../../assets/imgs/user.jpeg';
-import user2 from '../../assets/imgs/user2.jpg';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import './UserList.css';
 import { styled } from '@mui/material/styles';
 import Badge from '@mui/material/Badge';
@@ -80,15 +78,43 @@ function UserList({ users }) {
           <div className='user-list'>
             <Carousel responsive={responsive}>
               {users.map((user) => {
+
                 return (
-                  <div onClick={() => history.push("/user")}>
+                  <div onClick={() => history("../user")}>
                     <StyledBadge
                       overlap="circular"
                       anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
                       variant="dot"
                     >
                       <img
-                        src={img}
+                        src={require(`../../assets/imgs/users/user${user.id}.jpg`)}
+                        alt='myimg'
+                        className='imgg'
+                        key={user.id}
+                      // onClick={() => history.push(`/buy/user/${user.id}`)}
+                      />
+                    </StyledBadge>
+                    <span className='user-listName'>{t(user.name)}</span>
+                  </div>
+
+                );
+              })}
+            </Carousel>
+          </div>
+        </TabPanel>
+        <TabPanel>
+          <div className='user-list'>
+            <Carousel responsive={responsive}>
+              {users.map((user) => {
+                return (
+                  <div onClick={() => history("../user")}>
+                    <StyledBadge
+                      overlap="circular"
+                      anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+                      variant="dot"
+                    >
+                      <img
+                        src={require(`../../assets/imgs/users/user${21 - user.id}.jpg`)}
                         alt='myimg'
                         className='imgg'
                         key={user.id}
@@ -108,41 +134,14 @@ function UserList({ users }) {
             <Carousel responsive={responsive}>
               {users.map((user) => {
                 return (
-                  <div onClick={() => history.push("/user")}>
+                  <div onClick={() => history("../user")}>
                     <StyledBadge
                       overlap="circular"
                       anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
                       variant="dot"
                     >
                       <img
-                        src={user2}
-                        alt='myimg'
-                        className='imgg'
-                        key={user.id}
-                      // onClick={() => history.push(`/buy/user/${user.id}`)}
-                      />
-                    </StyledBadge>
-                    <span className='user-listName'>{t("mikiLto")}</span>
-                  </div>
-
-                );
-              })}
-            </Carousel>
-          </div>
-        </TabPanel>
-        <TabPanel>
-          <div className='user-list'>
-            <Carousel responsive={responsive}>
-              {users.map((user) => {
-                return (
-                  <div onClick={() => history.push("/user")}>
-                    <StyledBadge
-                      overlap="circular"
-                      anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-                      variant="dot"
-                    >
-                      <img
-                        src={img}
+                        src={require(`../../assets/imgs/users/user${user.id}.jpg`)}
                         alt='myimg'
                         className='imgg'
                         key={user.id}

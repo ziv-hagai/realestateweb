@@ -10,7 +10,7 @@ import { AiOutlineShoppingCart } from 'react-icons/ai';
 import GroupsIcon from '@mui/icons-material/Groups';
 // import Vacant from "../../assets/imgs/icons/vacantLand.svg";
 import { BsSignpostSplit } from 'react-icons/bs';
-import userImg from "../../assets/imgs/user.jpeg";
+import userImg from "../../assets/imgs/users/user1.jpg";
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 // import search from "../../assets/imgs/search.png";
 import SearchIcon from '@mui/icons-material/Search';
@@ -53,7 +53,7 @@ function Menu() {
               <ul className="menuList">
                 <li>
                   {/* <img src={profile} className="menuList-img" /> */}
-                    <PersonOutlineIcon className="menuList-img" />
+                  <PersonOutlineIcon className="menuList-img" />
                   <Link
                     to="/registerBusiness"
                     className="nav-links"

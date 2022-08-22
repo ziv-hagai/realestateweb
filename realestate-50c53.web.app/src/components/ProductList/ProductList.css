@@ -12,10 +12,17 @@
 
 }
 
+.product-preview {
+  max-width: 400px;
+}
+
+.product-preview>img {
+  object-fit: cover;
+}
 
 @media screen and (max-width: 600px) {
   .product-list {
-    display: block;
+    display: block !important;
   }
 
   .product-preview {

@@ -6,7 +6,7 @@ import home from "../../assets/imgs/Home.jpg";
 // import { ReactComponent as Zoom } from '../../assets/imgs/video.svg';
 import { ReactComponent as Call } from '../../assets/imgs/phone-call.svg';
 // import { ReactComponent as Chat } from '../../assets/imgs/messenger.svg';
-import userImg from "../../assets/imgs/user.jpeg";
+import userImg from "../../assets/imgs/users/user1.jpg";
 import "./ProductDetails.css";
 import { loadProduct } from "../../store/actions/productActions";
 import { useDispatch, useSelector } from "react-redux";

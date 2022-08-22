@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
 }
 
 body,
@@ -241,7 +241,7 @@ iframe {
   display: flex;
   overflow: hidden;
   position: relative;
-  direction: ltr;
+  /* direction: ltr; */
 }
 
 .img-fluid {
@@ -773,4 +773,21 @@ body[dir="rtl"] .sendBlockOptions button {
     width: 50vw !important;
     /* width: 50%; */
   }
+
+
+  /* he */
+
+  body[dir="rtl"] .mobilePageTabs a svg {
+    margin-left: 5px;
+  }
+
+  body[dir="rtl"] .right {
+
+    right: 100% !important;
+  }
+
+  body[dir="rtl"] .flex.activeTabs .right {
+    right: 50% !important;
+  }
+
 }

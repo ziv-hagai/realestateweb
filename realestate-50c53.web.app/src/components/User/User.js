@@ -1,7 +1,7 @@
 import React from "react";
 import "./User.css";
 import { ReactComponent as Price } from "../../assets/imgs/price.svg";
-import userImg from "../../assets/imgs/user.jpeg";
+import userImg from "../../assets/imgs/users/user1.jpg";
 import house1 from "../../assets/imgs/houses/1.jpg";
 import house2 from "../../assets/imgs/houses/2.jpg";
 import house3 from "../../assets/imgs/houses/3.jpg";

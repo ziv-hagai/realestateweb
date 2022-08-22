@@ -1,7 +1,7 @@
 // import React from "react";
 // import "./UserProfile.css";
 // import { ReactComponent as Price } from "../../assets/imgs/price.svg";
-import userImg from "../../assets/imgs/user.jpeg";
+import userImg from "../../assets/imgs/users/user1.jpg";
 // import { useTranslation } from "react-i18next";
 
 // function UserProfile() {

@@ -3,7 +3,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
-import img from "../../assets/imgs/user.jpeg";
+import img from "../../assets/imgs/users/user1.jpg";
 import { useTranslation } from "react-i18next";
 
 export default function Dropdown() {

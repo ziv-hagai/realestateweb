@@ -1,5 +1,5 @@
 import React from "react";
-import userImg from "../../assets/imgs/user.jpeg";
+import userImg from "../../assets/imgs/users/user1.jpg";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
 
