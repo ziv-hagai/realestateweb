@@ -172,7 +172,7 @@ input:focus {
     z-index: 10;
     left: 0;
     right: 0;
-    max-width: 500px;
+    max-width: 50vw;
 
 }
 

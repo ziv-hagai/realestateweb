@@ -1,20 +1,23 @@
-.menu{
+.menu {
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
     padding-bottom: 30px;
 }
-.menuHead{
+
+.menuHead {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
 }
-.menuList{
+
+.menuList {
     margin: 20px 0;
 }
-.menuList li{
+
+.menuList li {
     padding: 8px 0;
     display: flex;
     align-items: center;
@@ -23,6 +26,7 @@
     color: #555;
     font-weight: 400;
 }
+
 .menuList li a {
     padding: 0;
     width: 100%;
@@ -31,12 +35,14 @@
     color: #555;
     font-weight: 400;
 }
-.menuList-img{
+
+.menuList-img {
     width: 24px;
     height: 24px;
     margin-right: 15px;
 }
-.btn-gray{
+
+.btn-gray {
     background-color: #ddd;
     border: 1px solid #ddd;
     padding: 10px 15px;
@@ -47,7 +53,8 @@
     margin-bottom: 10px;
     width: 100%;
 }
-.btn-blue{
+
+.btn-blue {
     background-color: #00a9d6;
     border: 1px solid #00a9d6;
     padding: 10px 15px;
@@ -58,17 +65,20 @@
     margin-bottom: 10px;
     width: 100%;
 }
+
 .menuBtns {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .menufooterBtns {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
 }
+
 .menufooterLink {
     display: flex;
     align-items: center;
@@ -77,24 +87,28 @@
     color: #555;
     font-weight: 400;
 }
+
 .menufooterLink svg {
     margin-right: 8px;
     width: 20px;
     height: 20px;
     color: #333;
 }
+
 .menuHead-btn svg {
     width: 26px;
     height: 26px;
     fill: #000;
 }
+
 .menuUser-title {
     font-size: 16px;
     line-height: 22px;
     color: #555;
     font-weight: 500;
 }
-.menuUser-img{
+
+.menuUser-img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -102,12 +116,18 @@
     box-shadow: 0px 1px 8px 0px rgb(0 0 0 / 10%);
     overflow: hidden;
 }
+
 .menuUser-img img {
     width: 40px;
     height: 40px;
     object-fit: cover;
 }
-.menuUser{
+
+.menuUser {
     display: flex;
     align-items: center;
+}
+
+body[dir=rtl] .nav-links {
+    text-align: right;
 }

@@ -45,7 +45,7 @@ function Menu() {
                   </span>
                   <div className="menuUser-title">{t("jhonnyRose")}</div>
                 </div>
-                <div className="menuHead-btn" onClick={() => history.push("/")}>
+                <div className="menuHead-btn" onClick={() => history("/")}>
                   <CloseIcon />
                 </div>
               </div>
