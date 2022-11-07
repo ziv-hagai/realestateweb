@@ -168,7 +168,7 @@ function Company() {
                                     {item.name}
                                   </h6>
                                   <span className="product-box__price">
-                                    {item.price}
+                                    {item.price.toLocaleString()}
                                   </span>
                                 </div>
                               </div>

@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 
 function Filter({ handleChange, name, filterBy }) {
   const [values, setValues] = useState([]);
+  const [prices, setPrices] = useState([]);
   const [min, setMin] = useState();
   const [max, setMax] = useState();
   const { t } = useTranslation();
@@ -39,6 +40,9 @@ function Filter({ handleChange, name, filterBy }) {
         setMax(8000);
     }// eslint-disable-next-line
   }, []);
+  useEffect(() => {
+    setPrices([values[0].toLocaleString(), values[1].toLocaleString()]);
+  }, [values]);
 
   return (
     <div className="filter">
@@ -56,12 +60,12 @@ function Filter({ handleChange, name, filterBy }) {
         <div className="fromTo">
           <div className="value">
             <span className="from">{t("from")}</span>
-            <div className="border">{values[0]}</div>
+            <div className="border">{prices[0]}</div>
           </div>
 
           <div className="value">
             <span className="to">{t("to")}</span>
-            <div className="border">{values[1]}</div>
+            <div className="border">{prices[1]}</div>
           </div>
         </div>
       </div>

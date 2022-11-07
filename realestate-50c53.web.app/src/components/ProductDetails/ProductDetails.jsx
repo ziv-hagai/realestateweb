@@ -53,7 +53,7 @@ export default function ProductDetails(props) {
           <div className="header flex">
             <div className="price">
               {console.log("data.maps", data.maps)}
-              <h2>{isMapData ? data.maps.price : product.price}$</h2>
+              <h2>{isMapData ? data.maps.price.toLocaleString() : product.price.toLocaleString()}$</h2>
             </div>
             <div className='iconitems'>
               <div className='iconlist'>

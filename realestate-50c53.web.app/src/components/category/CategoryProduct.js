@@ -216,7 +216,7 @@ export default function CategoryProduct() {
                               {catItem.name}
                             </h6>
                             <span className="product-box__price">
-                              {catItem.price}
+                              {catItem.price.toLocaleString()}
                             </span>
                           </div>
                           <h5 className="product-box__name">

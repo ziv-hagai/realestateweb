@@ -138,7 +138,7 @@ function PaymentCardHistory() {
                     <div className="cartProduct-rightBlock">
                       <div className="cartProduct-box__brandBox">
                         <span className="cartProduct-box__price">
-                          {item.price}
+                          {item.price.toLocaleString()}
                         </span>
                       </div>
                     </div>

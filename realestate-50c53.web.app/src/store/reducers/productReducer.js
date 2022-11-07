@@ -2,13 +2,12 @@ const INITIAL_STATE = {
     products: [],
     currProduct: null,
     filterBy: {
-        
         minPrice: 1000000,
         maxPrice: 8000000,
         minRooms: 1,
         maxRooms: 8,
         minDistance: 0,
-        maxDistance:10000,
+        maxDistance: 10000,
         type: ''
     }
 }

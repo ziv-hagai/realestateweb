@@ -79,7 +79,7 @@ const Marker = ({ image, openInfoWindow, show, data, selectedMap }) => {
 
             <div className="productDetails">
               <div className="productDetailsHead flex">
-                <div className="price">{data.price}</div>
+                <div className="price">{data.price.toLocaleString()}</div>
               </div>
               <div className="productTitle">{data.name}</div>
               <div className="location">

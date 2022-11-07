@@ -76,7 +76,7 @@ export default function Cart() {
                             3 {t("boxSimple")}
                           </h5>
                           <span className="cartProduct-box__price">
-                            {item.price}
+                            {item.price.toLocaleString()}
                           </span>
                         </div>
                       </div>

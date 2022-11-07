@@ -372,7 +372,7 @@ export default function VandorsDetail() {
                                 {catItem.name}
                               </h6>
                               <span className="product-box__price">
-                                {catItem.price}
+                                {catItem.price.toLocaleString()}
                               </span>
                             </div>
                             <h5 className="product-box__name">
@@ -429,7 +429,7 @@ export default function VandorsDetail() {
                                     {item.name}
                                   </h6>
                                   <span className="product-box__price">
-                                    {item.price}
+                                    {item.price.toLocaleString()}
                                   </span>
                                 </div>
                                 <h5 className="product-box__name">

@@ -71,7 +71,7 @@ function BookingCartDetail() {
                         </h6>
                         <h5 className="cartProduct-box__name">3 Box simple</h5>
                         <span className="cartProduct-box__price">
-                          {cartItem.price}
+                          {cartItem.price.toLocaleString()}
                         </span>
                       </div>
                     </div>

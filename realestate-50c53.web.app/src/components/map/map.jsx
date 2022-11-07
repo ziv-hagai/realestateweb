@@ -73,7 +73,7 @@ function Map() {
     setOpen(true);
     setShowingInfoWindow(true);
     setActiveMarker(null);
-    dispatch(getMapData(p));
+    // dispatch(getMapData(p));
   };
 
   const handleClose = () => {
@@ -167,7 +167,7 @@ function Map() {
                         />
                         <div className="productDetails">
                           <div className="productDetailsHead flex">
-                            <div className="price">{p.price}$</div>
+                            <div className="price">{p.price.toLocaleString()}$</div>
                             <div className="iconitems">
                               <div className="iconlist">
                                 <Bath />

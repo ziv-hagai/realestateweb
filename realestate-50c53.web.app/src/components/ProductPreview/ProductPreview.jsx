@@ -47,7 +47,7 @@ function ProductPreview({ product }) {
         <img src={require(`../../assets/imgs/houses/${product.Image}`)} className='img' alt='' />
         <div className='productDetails'>
           <div className='productDetailsHead flex'>
-            <div className='price'>{product.price}$</div>
+            <div className='price'>{product.price.toLocaleString()}$</div>
             <div className='iconitems'>
               <div className='iconlist'>
                 <Bath />
