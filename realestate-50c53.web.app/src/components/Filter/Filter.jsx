@@ -40,8 +40,9 @@ function Filter({ handleChange, name, filterBy }) {
         setMax(8000);
     }// eslint-disable-next-line
   }, []);
+
   useEffect(() => {
-    setPrices([values[0].toLocaleString(), values[1].toLocaleString()]);
+    values.length && setPrices([values[0].toLocaleString(), values[1].toLocaleString()]);
   }, [values]);
 
   return (
