@@ -1,21 +1,21 @@
-import React, { useEffect, useState } from 'react';
-import { Button } from '../button/Button';
-import { Link } from 'react-router-dom';
-import '../navbar/Navbar.css';
-import { useDispatch } from 'react-redux';
-import { loadProducts } from '../../store/actions/productActions';
-import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
-import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
-import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import MainLogo from '../../assets/imgs/mainLogo.png';
-import { ReactComponent as Cross } from '../../assets/imgs/cross.svg';
-import { ReactComponent as MenuIcon } from '../../assets/imgs/nav menu.svg';
+import React, { useEffect, useState } from "react";
+import { Button } from "../button/Button";
+import { Link } from "react-router-dom";
+import "../navbar/Navbar.css";
+import { useDispatch } from "react-redux";
+import { loadProducts } from "../../store/actions/productActions";
+import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
+import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import MainLogo from "../../assets/imgs/mainLogo.png";
+import { ReactComponent as Cross } from "../../assets/imgs/cross.svg";
+import { ReactComponent as MenuIcon } from "../../assets/imgs/nav menu.svg";
 import { useLocation } from "react-router-dom";
-import { removeMapData } from '../../store/actions/mapActions';
+import { removeMapData } from "../../store/actions/mapActions";
 import { useTranslation } from "react-i18next";
 import LanguageSelect from "../Language/LanguageSelect";
-import Badge from '@mui/material/Badge';
+import Badge from "@mui/material/Badge";
 import NotificationsNoneIcon from "@material-ui/icons/NotificationsNone";
 import Typography from "@mui/material/Typography";
 import user from "../../assets/shop/user.jpeg";
@@ -27,9 +27,9 @@ function Navbar() {
   // const [dropdown] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => {
-    dispatch(removeMapData({}))
+    dispatch(removeMapData({}));
 
-    setClick(false)
+    setClick(false);
   };
   const dispatch = useDispatch();
   const location = useLocation();
@@ -48,15 +48,21 @@ function Navbar() {
   };
 
   return (
-    <div className='mainHeader'>
-      <nav className='navbar'>
-        <div className='mainHeader_Menu'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            <img src={MainLogo} className="img-fluid" alt='' />
+    <div className="mainHeader">
+      <nav className="navbar">
+        <div className="mainHeader_Menu">
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+            <img src={MainLogo} className="img-fluid" alt="" />
           </Link>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <Link to='/' className={splitLocation[1] === "" ? "nav-links active" : "nav-links"} onClick={closeMobileMenu}>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <Link
+                to="/"
+                className={
+                  splitLocation[1] === "" ? "nav-links active" : "nav-links"
+                }
+                onClick={closeMobileMenu}
+              >
                 {/* Buy */}
                 {t("buy")}
               </Link>
@@ -66,23 +72,29 @@ function Navbar() {
                 Sell
               </Link>
             </li> */}
-            <li className='nav-item'>
-              <Link to='/rent' className={splitLocation[1] === "rent" ? "nav-links active" : "nav-links"} onClick={closeMobileMenu}>
+            <li className="nav-item">
+              <Link
+                to="/rent"
+                className={
+                  splitLocation[1] === "rent" ? "nav-links active" : "nav-links"
+                }
+                onClick={closeMobileMenu}
+              >
                 {/* Rent */}
                 {t("rent")}
               </Link>
             </li>
-            <li className='nav-item'>
+            {/* <li className='nav-item'>
               <Link to='/dashboard' className={splitLocation[1] === "dashboard" ? "nav-links active" : "nav-links"} onClick={closeMobileMenu}>
-                {/* Shop */}
+                
                 {t("shop")}
               </Link>
-            </li>
-            <li className='nav-item'>
+            </li> */}
+            {/* <li className='nav-item'>
               <Link to='/menu' className={splitLocation[1] === "menu" ? "nav-links active" : "nav-links"} onClick={closeMobileMenu}>
                 {t("menu")}
               </Link>
-            </li>
+            </li> */}
             {/* <li className='nav-item'>
              <Link to='/settings' className='nav-links' onClick={closeMobileMenu}>
              Settings
@@ -103,20 +115,20 @@ function Navbar() {
             User
             </Link>
           </li> */}
-            <li className='nav-links-mobile'>
+            <li className="nav-links-mobile">
               <Link
-                to='/StartForFree'
-                className='nav-links'
+                to="/StartForFree"
+                className="nav-links"
                 onClick={closeMobileMenu}
               >
                 {/* Login */}
                 {t("login")}
               </Link>
             </li>
-            <li className='nav-links-mobile'>
+            <li className="nav-links-mobile">
               <Link
-                to='/StartForFree'
-                className='nav-links'
+                to="/StartForFree"
+                className="nav-links"
                 onClick={closeMobileMenu}
               >
                 {t("startForFree")}
@@ -124,7 +136,7 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <div className='rightSideBtns'>
+        <div className="rightSideBtns">
           <ul>
             {/* <li>
               <Link to='/' className='iconMenu'>
@@ -164,7 +176,7 @@ function Navbar() {
               <NotificationsNoneOutlinedIcon onClick={handlenotification} />
             </Badge>
             <li>
-              <Link to='/' className='iconMenu iconMenu--btn newAdd'>
+              <Link to="/" className="iconMenu iconMenu--btn newAdd">
                 <FavoriteBorderOutlinedIcon />
               </Link>
             </li>
@@ -174,16 +186,19 @@ function Navbar() {
               </Link>
             </li> */}
           </ul>
-          <div className='menu-icon' onClick={handleClick}>
-            <div className={click ? 'navIcons close' : 'navIcons open'}>
-              <span className='closeIcon'><Cross /></span>
-              <span className='openIcon'><MenuIcon /></span>
+          <div className="menu-icon" onClick={handleClick}>
+            <div className={click ? "navIcons close" : "navIcons open"}>
+              <span className="closeIcon">
+                <Cross />
+              </span>
+              <span className="openIcon">
+                <MenuIcon />
+              </span>
             </div>
           </div>
           <Button />
           <LanguageSelect />
         </div>
-
       </nav>
     </div>
   );
